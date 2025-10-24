@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Map Attempt 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' 
+    rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div><nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">CV WEB MAP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PORTFOLIO</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="padding">
+  <div class="container">
+    <div class="row">
+             <div class="col-sm-3">
+        <ul class="tree">  
+  <li> <span>Home</span>
+    <ul>
+      <li> <span id="About us">About us</span>
+        <ul>
+          <li> <span>Our history</span>
+            <ul>
+              <li><span>Founder</span></li>
+            </ul>
+          </li>
+          <li> <span>Our board</span>
+            <ul>
+              <li><span>Brad Whiteman</span></li>
+              <li><span>Cynthia Tolken</span></li>
+              <li><span>Bobby Founderson</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li> <span>Our products</span>
+        <ul>
+          <li> <span>The Widget 2000™</span>
+            <ul>
+              <li><span>Order form</span></li>
+            </ul>
+          </li>
+          <li> <span>The McGuffin V2</span>
+            <ul>
+              <li><span>Order form</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li> <span>Contact us</span>
+        <ul>
+          <li> <span>Social media</span>
+            <ul>
+              <li><span>Facebook</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+      </div>
+      <div class="col-sm-9">
+        <div id="my-map" class="map-container"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <script src="script.js"></script>   
+</body>
+</html>
