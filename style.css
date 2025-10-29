@@ -6,19 +6,17 @@
 }
   
   
-  body {
-        background-color: rgb(0, 0, 0); /* Or use a hex code like #ADD8E6 */
-    }
-
-.map-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: inherit;
-    height:inherit;
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
 }
 
-.tree,
+.navbar {
+  border-bottom: 1px solid #333;
+}
+
+/* .tree,
 .tree ul,
 .tree li {
     list-style: none;
@@ -89,4 +87,4 @@
 .tree>li>code:before,
 .tree>li>span:before {
     outline: none;
-}
+/* } 

@@ -1,0 +1,237 @@
+.landing-text {
+  display: flex;
+  align-items: flex-end; /* Vertically centers the items */
+  justify-content: center; /* Horizontally centers the items (optional) */
+  height: 50vh; /* Example: container takes full viewport height */
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.navbar {
+  border-bottom: 1px solid #333;
+  height:6vh;
+}
+
+.tree-container {
+  background-color: black;
+  overflow-y: auto;
+  min-height: 100vh;
+  color: white;
+  word-wrap: break-word;
+}
+
+.map-container {
+  position: relative;
+  height: 100vh;
+}
+
+#map {
+  width: 100%;
+  height: 94vh;
+}
+
+#info-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+/* Tree Diagram Styles */
+.tree, .tree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tree ul {
+  margin-left: 1.5em;
+  position: relative;
+}
+
+.tree ul::before {
+  content: '';
+  border-left: 1px solid white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.tree li {
+  margin: 0;
+  padding: 0.5em 0 0.5em 1.5em;
+  position: relative;
+}
+
+.tree li::before {
+  content: '';
+  border-top: 1px solid white;
+  position: absolute;
+  top: 1.2em;
+  left: 0;
+  width: 1.2em;
+  height: 0;
+}
+
+.tree li span {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  color: white;
+  word-break: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .tree-container {
+    min-height: auto;
+  }
+
+  .map-container {
+    height: 50vh;
+  }
+}
+
+    .resume-popup { color: #111; font-family: Arial, sans-serif; }
+    .resume-popup .title { font-weight: 700; margin-bottom: 6px; display:block; }
+    .resume-popup .exp-type { margin-bottom: 8px; }
+    .resume-popup ul { margin: 0; padding-left: 18px; }
+    .resume-popup li { margin-bottom: 4px; }
+
+    /* .portfolio-item img {
+      border-radius: 8px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      width: 100%;
+    }
+    .portfolio-item img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }  */
+    /* body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+ .masonry {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+
+    @media (max-width: 992px) {
+      .masonry {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .masonry {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .masonry-item {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .masonry-item img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      height: auto;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .masonry-item img:hover {
+      transform: scale(1.03);
+      opacity: 0.9;
+    } */
+
+     
+     body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+   .portfolio-container {
+      max-width: 83.3333vw; /* ~10/12 width */
+      margin: 0 auto;
+      padding: 10vh 10vw 10vh; /* top, left/right, bottom */
+    }
+
+    /* Masonry grid using CSS columns */
+    .masonry {
+      column-count: 2;
+      column-gap: 35px;
+    }
+
+    @media (max-width: 992px) {
+      .masonry {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .masonry {
+        column-count: 1;
+      }
+    }
+
+    .masonry-item {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 35px;
+      border-radius: 35px;
+      overflow: hidden;
+    }
+
+    .masonry-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .masonry-item img:hover {
+      transform: scale(1.03);
+      opacity: 0.9;
+    }
+
+        .resume-popup {
+      font-family: Arial, sans-serif;
+      color: #111;
+    }
+    .resume-popup strong {
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .resume-popup .exp-type {
+      margin-bottom: 4px;
+      font-style: italic;
+    }
+    .resume-popup .year {
+      margin-bottom: 8px;
+    }
+    .resume-popup ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .resume-popup li {
+      margin-bottom: 4px;
+    }
