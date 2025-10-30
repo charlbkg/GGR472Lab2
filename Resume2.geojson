@@ -39,7 +39,7 @@
             "type": "Feature",
             "properties": {
                 "Name": "Research Assistant, Urban Genome Project",
-                "ExperienceType": "Job",
+                "ExperienceType": "Research",
                 "Description": "Work-study position through Daniel's at UofT, Mixed-method sociological research on invasive species management and conceptualization at the municipal level,Data collection, processing, and analysis to develop a framework of invasive species conceptualization in the Toronto and Region Conservation Authority,Literature review and cartography for final manuscript, Co-author on manuscript currently under review",
                 "Year": "2023-2024"
             },
@@ -49,7 +49,8 @@
                     43.65966022937468
                 ],
                 "type": "Point"
-            }
+            },
+            "id": 2
         },
         {
             "type": "Feature",
@@ -70,7 +71,7 @@
         {
             "type": "Feature",
             "properties": {
-                "ExperienceType": "Job",
+                "ExperienceType": "Research",
                 "Description": "Production of chronology, annotated bibliography, and databases supporting political economy research on organic wine production and wine cooperatives in Southern France, Background research on the progression of EU wine and agricultural policies.",
                 "Name": "Research Assistant, Scott Prudham",
                 "Year": 2022
@@ -97,7 +98,8 @@
                     43.664730119422074
                 ],
                 "type": "Point"
-            }
+            },
+            "id": 5
         },
         {
             "type": "Feature",
@@ -113,7 +115,8 @@
                     43.670059880233595
                 ],
                 "type": "Point"
-            }
+            },
+            "id": 6
         },
         {
             "type": "Feature",
@@ -151,7 +154,7 @@
             "type": "Feature",
             "properties": {
                 "Name": "BioSeq (Lab Assistant)",
-                "ExperienceType": "Job",
+                "ExperienceType": "Research",
                 "Description": "Assist in designing experiments relating to bioinformatics and next-generation sequencing.",
                 "Year": "2017-2018"
             },
@@ -177,7 +180,8 @@
                     43.658962367110036
                 ],
                 "type": "Point"
-            }
+            },
+            "id": 10
         },
         {
             "type": "Feature",
@@ -193,7 +197,8 @@
                     43.658690449249775
                 ],
                 "type": "Point"
-            }
+            },
+            "id": 11
         },
         {
             "type": "Feature",
@@ -207,6 +212,106 @@
                 "coordinates": [
                     -79.41101088192067,
                     43.651410286301285
+                ],
+                "type": "Point"
+            },
+            "id": 12
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Massachusetts Department of Conservation and Recreation: OpenSpace Editor",
+                "ExperienceType": "Job",
+                "Year": "2024-2025",
+                "Description": "Geospatial data editing for MassGIS's Protected OpenSpace data layer,Background research in state and municipal databases including deeds, state legislation, maps, plans, and surveys,Update internal government land acquisition records and sync information with accurate geometry and attribute information in OpenSpace,Synthesize field data, tax assessor parcels, coordinate geometry, LIDAR, hydrological data, and transportation data to represent accurate legal boundaries,Work within an Oracle relational database management system"
+            },
+            "geometry": {
+                "coordinates": [
+                    -71.06671591434713,
+                    42.35149928815926
+                ],
+                "type": "Point"
+            },
+            "id": 13
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Tutor: Geographic Information Systems",
+                "ExperienceType": "Extra-Curricular",
+                "Description": "In-person tutoring and production of instructional documents for the Seneca College course: Geospatial Data Collection, Analysis & Interpretation using GIS Technology",
+                "Year": "2023-2024"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.4054609302481,
+                    43.65209966842866
+                ],
+                "type": "Point"
+            },
+            "id": 14
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Student Researcher: Rocky Mountain Biological Laboratory",
+                "ExperienceType": "Research",
+                "Description": "Design and perform study analyzing environmental drivers of vegetative senescence in Veratrum californicum using remote sensing and en situ data collection,Quadrat sampling using: a Trimble GeoXT 6000, HOBO Pendant Temperature/Light Data Loggers, and FieldScout TDR 150 Soil Moisture Meter, RS Imagery: classified vegetation raster, digital elevation model, and an imagery raster with blue, green, red, near-infrared, red-edge, and thermal bands,Creation of senescence rasters for Veratrum californicum by masking NIR and red-edge bands by the vegetative extent drawn from classified imagery and calculating NDVI, Spatial and non-spatial regressions using Rstudio and ArcGIS.",
+                "Year": "2023",
+                "URL": "https://ecce.esri.ca/uoft-blog/2024/01/15/remote-and-direct-sensing/"
+            },
+            "geometry": {
+                "coordinates": [
+                    -106.98887085545665,
+                    38.95858649353906
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Research Course, ENV421: Community Research for Social & Environmental Change",
+                "ExperienceType": "Research",
+                "Description": "Group research project (seven students from course, and three MealCare organizers) surrounding a community partnership with MealCare, an organization working to redistribute surplus food around the city of Toronto, minimizing waste and addressing food insecurity, Project primarily centered on semi-structured interviewing of potential donors and beneficiaries, to improve the efficiency and reach of MealCare’s programming, Created web map depicting MealCare’s spatial capacity and highlighting potential hotspots for both food donors and beneficiaries.",
+                "Year": "2023-2024"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39363112709323,
+                    43.659917960647874
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Toronto Metropolitan University Institute for Change Leaders: Advocacy and Campaign Course",
+                "ExperienceType": "Extra-Curricular",
+                "Description": "Weekly training to support volunteer work with the University of Toronto Emergency Food Bank, Group seminars with local organizers, discussing advocacy and effective organizing",
+                "Year": "2021"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.37802975496793,
+                    43.65826288990044
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Folkuniversitet Stockholm: Swedish Language A1/A2",
+                "ExperienceType": "Extra-Curricular",
+                "Description": "One month intensive Swedish language course",
+                "Year": "2024"
+            },
+            "geometry": {
+                "coordinates": [
+                    18.055678846302072,
+                    59.34061720922952
                 ],
                 "type": "Point"
             }
