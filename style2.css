@@ -1,66 +1,70 @@
-
-
 .landing-text {
   display: flex;
-  align-items: flex-end; /* Vertically centers the items */
-  justify-content: center; /* Horizontally centers the items (optional) */
-  height: 50vh; /* Example: container takes full viewport height */
+  align-items: flex-end;
+  /* Vertically centers the items */
+  justify-content: center;
+  /* Horizontally centers the items (optional) */
+  height: 50vh;
+  /* Example: container takes full viewport height */
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background-color: black;
-  color: white;
-  overflow-x: hidden;
-}
+*/
 
+/* Sticky Navbar */
 .navbar {
-  border-bottom: 1px solid #333;
-  height:6vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #111;
+  border-bottom: 1px solid #222;
 }
 
-    
-    .resume-popup {
-      font-family: Arial, sans-serif;
-      color: #111;
-    }
+*/ .outer {
+  border: solid 1px #000;
+  height: 200px;
+  overflow: hidden;
+}
 
-    .resume-popup strong {
-      font-size: 1.1em;
-      display: block;
-      margin-bottom: 6px;
-    }
-    .resume-popup .exp-type {
-      margin-bottom: 4px;
-      font-style: italic;
-    }
-    .resume-popup .year {
-      margin-bottom: 8px;
-    }
-    .resume-popup ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-    .resume-popup li {
-      margin-bottom: 4px;
-    }
 
 .tree-container {
-  background-color: black;
-  overflow-y: auto;
-  min-height: 100vh;
-  color: white;
-  word-wrap: break-word;
+  border: solid 1px rgb(0, 0, 0);
 }
 
-.map-container {
-  position: relative;
-  height: 100vh;
-}
 
 #map {
-  width: 100%;
+  width: 75vw;
   height: 94vh;
+  position: fixed;
+}
+
+.resume-popup {
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.resume-popup strong {
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.resume-popup .exp-type {
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+.resume-popup .year {
+  margin-bottom: 8px;
+}
+
+.resume-popup ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.resume-popup li {
+  margin-bottom: 4px;
 }
 
 #info-btn {
@@ -71,8 +75,32 @@ body {
   border-radius: 50%;
 }
 
+ /* Time slider styling */
+  .slider-container {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    z-index: 2;
+    width: 320px;
+  }
+
+  input[type=range] {
+    width: 100%;
+  }
+
+  .year-label {
+    text-align: center;
+    font-weight: bold;
+  }
+  
 /* Tree Diagram Styles */
-.tree, .tree ul {
+.tree,
+.tree ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -90,6 +118,10 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 .tree li {
@@ -116,122 +148,71 @@ body {
   word-break: break-word;
 }
 
+
+
+
+/* Portfolio formatting */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.portfolio-container {
+  max-width: 83.3333vw;
+  /* ~10/12 width */
+  margin: 0 auto;
+  padding: 10vh 10vw 10vh;
+  /* top, left/right, bottom */
+}
+
+/* Masonry grid using CSS columns */
 /* Responsive adjustments */
+
 @media (max-width: 767px) {
   .tree-container {
     min-height: auto;
   }
 
-  .map-container {
-    height: 50vh;
+}
+
+.masonry {
+  column-count: 2;
+  column-gap: 35px;
+}
+
+@media (max-width: 992px) {
+  .masonry {
+    column-count: 2;
   }
 }
 
-    /* .portfolio-item img {
-      border-radius: 8px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-      width: 100%;
-    }
-    .portfolio-item img:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }  */
-    /* body {
-      background-color: #000;
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
- .masonry {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      padding: 10px;
-    }
+@media (max-width: 576px) {
+  .masonry {
+    column-count: 1;
+  }
+}
 
-    @media (max-width: 992px) {
-      .masonry {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 35px;
+  border-radius: 35px;
+  overflow: hidden;
+}
 
-    @media (max-width: 576px) {
-      .masonry {
-        grid-template-columns: 1fr;
-      }
-    }
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-    .masonry-item {
-      overflow: hidden;
-      border-radius: 10px;
-    }
-
-    .masonry-item img {
-      width: 100%;
-      display: block;
-      border-radius: 10px;
-      height: auto;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .masonry-item img:hover {
-      transform: scale(1.03);
-      opacity: 0.9;
-    } */
-
-     
-     body {
-      background-color: #000;
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-   .portfolio-container {
-      max-width: 83.3333vw; /* ~10/12 width */
-      margin: 0 auto;
-      padding: 10vh 10vw 10vh; /* top, left/right, bottom */
-    }
-
-    /* Masonry grid using CSS columns */
-    .masonry {
-      column-count: 2;
-      column-gap: 35px;
-    }
-
-    @media (max-width: 992px) {
-      .masonry {
-        column-count: 2;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .masonry {
-        column-count: 1;
-      }
-    }
-
-    .masonry-item {
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 35px;
-      border-radius: 35px;
-      overflow: hidden;
-    }
-
-    .masonry-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 10px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .masonry-item img:hover {
-      transform: scale(1.03);
-      opacity: 0.9;
-    }
-
+.masonry-item img:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}

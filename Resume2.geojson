@@ -7,7 +7,8 @@
                 "Name": "University of Toronto",
                 "ExperienceType": "Education",
                 "Description": "Major - Biodiversity and Conservation Biology, Major - Environmental Ethics , Minor - Geographic Information Systems",
-                "Year": "2019-2024"
+                "Year": "2019-2024",
+                "YearTruncated": 2019
             },
             "geometry": {
                 "coordinates": [
@@ -24,7 +25,8 @@
                 "Name": "Somerville High School",
                 "ExperienceType": "Education",
                 "Description": "College Track Program with Vocational Culinary-Arts",
-                "Year": "2015-2019"
+                "Year": "2015-2019",
+                "YearTruncated": 2015
             },
             "geometry": {
                 "coordinates": [
@@ -41,7 +43,8 @@
                 "Name": "Research Assistant: Urban Genome Project",
                 "ExperienceType": "Research",
                 "Description": "Work-study position through Daniel's at UofT, Mixed-method sociological research on invasive species management and conceptualization at the municipal level,Data collection, processing, and analysis to develop a framework of invasive species conceptualization in the Toronto and Region Conservation Authority,Literature review and cartography for final manuscript, Co-author on manuscript currently under review",
-                "Year": "2023-2024"
+                "Year": "2023-2024",
+                "YearTruncated": 2023
             },
             "geometry": {
                 "coordinates": [
@@ -58,7 +61,8 @@
                 "Name": "ESRI Canada Student Associate",
                 "ExperienceType": "Other",
                 "Description": "Student program through ESRI Canada focused on developing GIS skills and networking, Publish GIS-focused writing pieces on the ESRI Canada site, Participate in a national application design challenge ",
-                "Year": "2023-2024"
+                "Year": "2023-2024",
+                "YearTruncated": 2023
             },
             "geometry": {
                 "coordinates": [
@@ -74,7 +78,8 @@
                 "ExperienceType": "Research",
                 "Description": "Production of chronology, annotated bibliography, and databases supporting political economy research on organic wine production and wine cooperatives in Southern France, Background research on the progression of EU wine and agricultural policies.",
                 "Name": "Research Assistant, Scott Prudham",
-                "Year": 2022
+                "Year": 2022,
+                "YearTruncated": 2022
             },
             "geometry": {
                 "coordinates": [
@@ -90,7 +95,8 @@
                 "Name": "Line Cook / Barista: Rustle and Still",
                 "ExperienceType": "Job",
                 "Description": "",
-                "Year": "2022-2024"
+                "Year": "2022-2024",
+                "YearTruncated": 2022
             },
             "geometry": {
                 "coordinates": [
@@ -107,7 +113,8 @@
                 "Name": "Barista: Goldstruck",
                 "ExperienceType": "Job",
                 "Description": "",
-                "Year": "2021-2022"
+                "Year": "2021-2022",
+                 "YearTruncated": 2021
             },
             "geometry": {
                 "coordinates": [
@@ -124,7 +131,8 @@
                 "Name": "Political Canvassing: CADC",
                 "ExperienceType": "Job",
                 "Description": "Data collection and political canvassing in relation to the November 2020 presidential and senatorial election.",
-                "Year": 2020
+                "Year": 2020,
+                 "YearTruncated": 2020
             },
             "geometry": {
                 "coordinates": [
@@ -140,7 +148,8 @@
                 "Name": "Prep Cook: Sarma",
                 "ExperienceType": "Job",
                 "Description": "",
-                "Year": "2018-2019"
+                "Year": "2018-2019",
+                 "YearTruncated": 2018
             },
             "geometry": {
                 "coordinates": [
@@ -156,7 +165,8 @@
                 "Name": "Lab Assistant: BioSeq",
                 "ExperienceType": "Research",
                 "Description": "Assist in designing experiments relating to bioinformatics and next-generation sequencing.",
-                "Year": "2017-2018"
+                "Year": "2017-2018",
+                 "YearTruncated": 2017
             },
             "geometry": {
                 "coordinates": [
@@ -172,7 +182,8 @@
                 "Name": "Organizer: UofT Emergency Food Bank",
                 "ExperienceType": "Volunteer",
                 "Description": "Aid in supplying UofT community through partnership with FoodShare TO, Grant writing, Work with task group to develop advocacy and community involvement initiatives",
-                "Year": "2021-2022"
+                "Year": "2021-2022",
+                 "YearTruncated": 2021
             },
             "geometry": {
                 "coordinates": [
@@ -189,7 +200,8 @@
                 "Name": "Volunteer: Bikechain",
                 "ExperienceType": "Volunteer",
                 "Description": "Bicycle repair and maintenance. ",
-                "Year": "2021-2024"
+                "Year": "2021-2024",
+                 "YearTruncated": 2021
             },
             "geometry": {
                 "coordinates": [
@@ -206,7 +218,8 @@
                 "Name": "Volunteer, Community Fridges Toronto",
                 "ExperienceType": "Volunteer",
                 "Year": 2021,
-                "Description": "Weekly fridge cleaning and maintenance."
+                "Description": "Weekly fridge cleaning and maintenance.",
+                 "YearTruncated": 2021
             },
             "geometry": {
                 "coordinates": [
@@ -223,7 +236,8 @@
                 "Name": "Massachusetts Department of Conservation and Recreation: OpenSpace Editor",
                 "ExperienceType": "Job",
                 "Year": "2024-2025",
-                "Description": "Geospatial data editing for MassGIS's Protected OpenSpace data layer,Background research in state and municipal databases including deeds, state legislation, maps, plans, and surveys,Update internal government land acquisition records and sync information with accurate geometry and attribute information in OpenSpace,Synthesize field data, tax assessor parcels, coordinate geometry, LIDAR, hydrological data, and transportation data to represent accurate legal boundaries,Work within an Oracle relational database management system"
+                "Description": "Geospatial data editing for MassGIS's Protected OpenSpace data layer,Background research in state and municipal databases including deeds, state legislation, maps, plans, and surveys,Update internal government land acquisition records and sync information with accurate geometry and attribute information in OpenSpace,Synthesize field data, tax assessor parcels, coordinate geometry, LIDAR, hydrological data, and transportation data to represent accurate legal boundaries,Work within an Oracle relational database management system",
+                 "YearTruncated": 2024
             },
             "geometry": {
                 "coordinates": [
@@ -240,7 +254,8 @@
                 "Name": "Tutor: Geographic Information Systems",
                 "ExperienceType": "Extra-Curricular",
                 "Description": "In-person tutoring and production of instructional documents for the Seneca College course: Geospatial Data Collection, Analysis & Interpretation using GIS Technology",
-                "Year": "2023-2024"
+                "Year": "2023-2024",
+                 "YearTruncated": 2023
             },
             "geometry": {
                 "coordinates": [
@@ -258,7 +273,8 @@
                 "ExperienceType": "Research",
                 "Description": "Design and perform study analyzing environmental drivers of vegetative senescence in Veratrum californicum using remote sensing and en situ data collection,Quadrat sampling using: a Trimble GeoXT 6000, HOBO Pendant Temperature/Light Data Loggers, and FieldScout TDR 150 Soil Moisture Meter, RS Imagery: classified vegetation raster, digital elevation model, and an imagery raster with blue, green, red, near-infrared, red-edge, and thermal bands,Creation of senescence rasters for Veratrum californicum by masking NIR and red-edge bands by the vegetative extent drawn from classified imagery and calculating NDVI, Spatial and non-spatial regressions using Rstudio and ArcGIS.",
                 "Year": "2023",
-                "URL": "https://ecce.esri.ca/uoft-blog/2024/01/15/remote-and-direct-sensing/"
+                "URL": "https://ecce.esri.ca/uoft-blog/2024/01/15/remote-and-direct-sensing/",
+                 "YearTruncated": 2023
             },
             "geometry": {
                 "coordinates": [
@@ -274,7 +290,8 @@
                 "Name": "Research Course, ENV421: Community Research for Social & Environmental Change",
                 "ExperienceType": "Research",
                 "Description": "Group research project (seven students from course, and three MealCare organizers) surrounding a community partnership with MealCare, an organization working to redistribute surplus food around the city of Toronto, minimizing waste and addressing food insecurity, Project primarily centered on semi-structured interviewing of potential donors and beneficiaries, to improve the efficiency and reach of MealCare’s programming, Created web map depicting MealCare’s spatial capacity and highlighting potential hotspots for both food donors and beneficiaries.",
-                "Year": "2023-2024"
+                "Year": "2023-2024",
+                 "YearTruncated": 2023
             },
             "geometry": {
                 "coordinates": [
@@ -290,7 +307,8 @@
                 "Name": "Toronto Metropolitan University Institute for Change Leaders: Advocacy and Campaign Course",
                 "ExperienceType": "Extra-Curricular",
                 "Description": "Weekly training to support volunteer work with the University of Toronto Emergency Food Bank, Group seminars with local organizers, discussing advocacy and effective organizing",
-                "Year": "2021"
+                "Year": "2021",
+                 "YearTruncated": 2021
             },
             "geometry": {
                 "coordinates": [
@@ -306,7 +324,8 @@
                 "Name": "Folkuniversitet Stockholm: Swedish Language A1/A2",
                 "ExperienceType": "Extra-Curricular",
                 "Description": "One month intensive Swedish language course",
-                "Year": "2024"
+                "Year": "2024",
+                 "YearTruncated": 2024
             },
             "geometry": {
                 "coordinates": [

@@ -18,7 +18,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
     <div class="container-fluid">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
@@ -35,10 +35,12 @@
   </nav>
 
   <!-- Page Content -->
+  <div class="content-container mt-5">
   <div class="container-fluid">
+        <div class="col-xs-12 outer">
     <div class="row">
       <!-- Left Column: Tree Diagram -->
-      <div class="col-lg-3 col-md-4 col-12 p-4 tree-container">
+      <div class="col-sm-3 tree-container">
         <ul class="tree">
           <li>
             <span>Experience Tree (click to zoom on map)</span>
@@ -117,10 +119,22 @@
       </div>
 
       <!-- Right Column: Map -->
-      <div class="col-lg-9 col-md-8 col-12 p-0 map-container">
+      <div class=" col-sm-9 map-container">
+        <div class="right-col">
         <div id="map"></div>
+        <div class="slider-container">
+  <div class="year-label">Year: <span id="year-value">2010</span></div>
+  <input type="range" id="year-slider" min="2000" max="2025" value="2010" step="1">
+</div>
+<div id="status" class="status">
+  <b>Status</b>
+  <div id="status-text">Loading map...</div>
+</div>
+        </div>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 
   <!-- Bootstrap JS -->
