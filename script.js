@@ -60,7 +60,7 @@ map.on('load', () => {
       source: 'resume',
       paint: {
         'heatmap-weight': 1,
-        'heatmap-intensity': 10,
+        'heatmap-intensity': 15,
         'heatmap-radius': 30,
         'heatmap-opacity': 0.8,
         'heatmap-color': [
