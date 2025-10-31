@@ -47,7 +47,7 @@ map.on('load', () => {
     type: 'circle',
     source: 'resume',
     paint: {
-      'circle-radius': 6,
+      'circle-radius': 15,
       'circle-color': '#ff7e5f',
       'circle-stroke-width': 1.5,
       'circle-stroke-color': '#fff'
