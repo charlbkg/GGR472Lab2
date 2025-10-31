@@ -55,7 +55,7 @@ map.addControl(new mapboxgl.FullscreenControl(), 'bottom-left');
       });
 
       // Click handler for popups
-      map.on('click', 'resume-points', (e) => {
+      map.on('hover', 'resume-points', (e) => {
         const feature = e.features[0];
         const props = feature.properties;
 
