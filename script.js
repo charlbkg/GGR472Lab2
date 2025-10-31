@@ -38,7 +38,7 @@ map.addControl(new mapboxgl.FullscreenControl(), 'bottom-left');
     map.on('load', () => {
       map.addSource('resume', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/charlbkg/GGR472Lab3/main/Resume.geojson' // make sure this path is correct
+        data: 'https://raw.githubusercontent.com/charlbkg/WEBMAPCV/refs/heads/main/Resume2.geojson' // make sure this path is correct
       });
 
       // Simple circle layer

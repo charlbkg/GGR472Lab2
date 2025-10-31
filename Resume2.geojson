@@ -38,7 +38,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Research Assistant, Urban Genome Project",
+                "Name": "Research Assistant: Urban Genome Project",
                 "ExperienceType": "Research",
                 "Description": "Work-study position through Daniel's at UofT, Mixed-method sociological research on invasive species management and conceptualization at the municipal level,Data collection, processing, and analysis to develop a framework of invasive species conceptualization in the Toronto and Region Conservation Authority,Literature review and cartography for final manuscript, Co-author on manuscript currently under review",
                 "Year": "2023-2024"
@@ -56,7 +56,7 @@
             "type": "Feature",
             "properties": {
                 "Name": "ESRI Canada Student Associate",
-                "ExperienceType": "Extra-Curricular",
+                "ExperienceType": "Other",
                 "Description": "Student program through ESRI Canada focused on developing GIS skills and networking, Publish GIS-focused writing pieces on the ESRI Canada site, Participate in a national application design challenge ",
                 "Year": "2023-2024"
             },
@@ -87,10 +87,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Rustle and Still (Line Cook / Barista)",
+                "Name": "Line Cook / Barista: Rustle and Still",
                 "ExperienceType": "Job",
                 "Description": "",
-                "Year": "2022-Present"
+                "Year": "2022-2024"
             },
             "geometry": {
                 "coordinates": [
@@ -104,7 +104,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Goldstruck (Barista)",
+                "Name": "Barista: Goldstruck",
                 "ExperienceType": "Job",
                 "Description": "",
                 "Year": "2021-2022"
@@ -121,7 +121,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "CADC (Political canvassing)",
+                "Name": "Political Canvassing: CADC",
                 "ExperienceType": "Job",
                 "Description": "Data collection and political canvassing in relation to the November 2020 presidential and senatorial election.",
                 "Year": 2020
@@ -137,7 +137,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Sarma (Prep Cook)",
+                "Name": "Prep Cook: Sarma",
                 "ExperienceType": "Job",
                 "Description": "",
                 "Year": "2018-2019"
@@ -153,7 +153,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "BioSeq (Lab Assistant)",
+                "Name": "Lab Assistant: BioSeq",
                 "ExperienceType": "Research",
                 "Description": "Assist in designing experiments relating to bioinformatics and next-generation sequencing.",
                 "Year": "2017-2018"
@@ -169,7 +169,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "UofT Emergency Food Bank (Organizer)",
+                "Name": "Organizer: UofT Emergency Food Bank",
                 "ExperienceType": "Volunteer",
                 "Description": "Aid in supplying UofT community through partnership with FoodShare TO, Grant writing, Work with task group to develop advocacy and community involvement initiatives",
                 "Year": "2021-2022"
@@ -186,10 +186,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Bikechain (Volunteer)",
+                "Name": "Volunteer: Bikechain",
                 "ExperienceType": "Volunteer",
                 "Description": "Bicycle repair and maintenance. ",
-                "Year": "2021-Present"
+                "Year": "2021-2024"
             },
             "geometry": {
                 "coordinates": [
@@ -203,7 +203,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Community Fridges Toronto (Volunteer)",
+                "Name": "Volunteer, Community Fridges Toronto",
                 "ExperienceType": "Volunteer",
                 "Year": 2021,
                 "Description": "Weekly fridge cleaning and maintenance."
