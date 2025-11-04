@@ -5,6 +5,7 @@ const map = new mapboxgl.Map({
   center: [-71.09647636158911,
     42.386864529111335], // starting position [lng, lat]
   zoom: 17, // starting zoom
+  pitch: 50,
 });
 // Add zoom and rotation controls, position controls
 map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
@@ -60,8 +61,8 @@ map.on('load', () => {
       source: 'resume',
       paint: {
         'heatmap-weight': 1,
-        'heatmap-intensity': 15,
-        'heatmap-radius': 30,
+        'heatmap-intensity': 3.5,
+        'heatmap-radius': 60,
         'heatmap-opacity': 0.8,
         'heatmap-color': [
           'interpolate',

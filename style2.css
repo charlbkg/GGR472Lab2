@@ -38,6 +38,29 @@
   position: fixed;
 }
 
+ /* Time slider styling */
+  .slider-container {
+    position: fixed;
+    bottom: 30px;
+    left: 89%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    z-index: 2;
+    width: 320px;
+  }
+
+  input[type=range] {
+    width: 100%;
+  }
+
+  .year-label {
+    text-align: center;
+    font-weight: bold;
+  }
+
 .resume-popup {
   font-family: Arial, sans-serif;
   color: #111;
@@ -74,29 +97,6 @@
   z-index: 10;
   border-radius: 50%;
 }
-
- /* Time slider styling */
-  .slider-container {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0,0,0,0.6);
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: white;
-    z-index: 2;
-    width: 320px;
-  }
-
-  input[type=range] {
-    width: 100%;
-  }
-
-  .year-label {
-    text-align: center;
-    font-weight: bold;
-  }
   
 /* Tree Diagram Styles */
 .tree,
@@ -202,14 +202,16 @@ body {
   margin-bottom: 35px;
   border-radius: 35px;
   overflow: hidden;
+  padding: 10px;
 }
 
 .masonry-item img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;
+  border-radius: 0px;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  padding: 10px;
 }
 
 .masonry-item img:hover {
