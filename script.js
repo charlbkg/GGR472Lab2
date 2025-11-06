@@ -43,7 +43,7 @@ map.on('load', () => {
   });
 
   // Load the custom SVG icon
-  map.loadImage('https://raw.githubusercontent.com/charlbkg/WEBMAPCV/refs/heads/main/markerupload.svg', (error, image) => {
+  map.loadImage('https://raw.githubusercontent.com/charlbkg/WEBMAPCV/refs/heads/main/markerupload.jpg', (error, image) => {
     if (error) throw error;
 
     // Add icon to the map style
