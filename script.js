@@ -43,7 +43,7 @@ map.on('load', () => {
   });
 
   // Load the custom SVG icon
-  map.loadImage('https://raw.githubusercontent.com/charlbkg/WEBMAPCV/refs/heads/main/markerupload.jpg', (error, image) => {
+  map.loadImage('https://raw.githubusercontent.com/charlbkg/WEBMAPCV/refs/heads/main/marker.png', (error, image) => {
     if (error) throw error;
 
     // Add icon to the map style
@@ -56,7 +56,7 @@ map.on('load', () => {
       source: 'resume',
       layout: {
         'icon-image': 'resume-marker',
-        'icon-size': 1.2,   // adjust icon size here
+        'icon-size': .075,   // adjust icon size here
         'icon-anchor': 'bottom', // makes the bottom point align to coord
         'icon-allow-overlap': true
       }
@@ -77,7 +77,7 @@ map.on('load', () => {
   // });
 
   // Click handler for popups
-  map.on('click', 'resume-points', (e) => {
+  map.on('mouseenter', 'resume-points', (e) => {
     const feature = e.features[0];
     const props = feature.properties;
 
