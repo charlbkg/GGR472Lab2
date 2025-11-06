@@ -42,18 +42,88 @@ map.on('load', () => {
     data: 'https://raw.githubusercontent.com/charlbkg/WEBMAPCV/refs/heads/main/Resume2.geojson' // make sure this path is correct
   });
 
+  // Load the custom SVG icon
+  map.loadImage('/Users/charlottekafkagibbons/Documents/GitHub/WEBCVPORTFOLIO/WebMapCV/markerupload.svg', (error, image) => {
+    if (error) throw error;
+
+    // Add icon to the map style
+    map.addImage('resume-marker', image);
+
+    // SYMBOL layer instead of circle layer
+    map.addLayer({
+      id: 'resume-points',
+      type: 'symbol',
+      source: 'resume',
+      layout: {
+        'icon-image': 'resume-marker',
+        'icon-size': 1.2,   // adjust icon size here
+        'icon-anchor': 'bottom', // makes the bottom point align to coord
+        'icon-allow-overlap': true
+      }
+    });
+  });
+
   // Simple circle layer
-  map.addLayer({
-    id: 'resume-points',
-    type: 'circle',
-    source: 'resume',
-    paint: {
-      'circle-radius': 15,
-      'circle-color': '#ff7e5f',
-      'circle-stroke-width': 1.5,
-      'circle-stroke-color': '#fff'
+  // map.addLayer({
+  //   id: 'resume-points',
+  //   type: 'circle',
+  //   source: 'resume',
+  //   paint: {
+  //     'circle-radius': 15,
+  //     'circle-color': '#ff7e5f',
+  //     'circle-stroke-width': 1.5,
+  //     'circle-stroke-color': '#fff'
+  //   }
+  // });
+
+  // Click handler for popups
+  map.on('click', 'resume-points', (e) => {
+    const feature = e.features[0];
+    const props = feature.properties;
+
+  // map.on('mouseenter', 'resume-points', (e) => {
+  //   map.getCanvas().style.cursor = 'pointer';
+
+  //   const feature = e.features[0];
+  //   const props = feature.properties;
+
+    // Format Description into bullet points
+    const bullets = props.Description
+      ? props.Description.split(',')
+        .map(item => item.trim())
+        .filter(item => item.length > 0)
+        .map(item => `<li>${item}</li>`)
+        .join('')
+      : '';
+
+    // Build popup HTML
+    const html = `
+            <div class="resume-popup">
+            <strong>${props.Name || 'Untitled'}</strong>
+            <div class="exp-type">Experience type: ${props.ExperienceType || 'N/A'}</div>
+            <div class="year">Year: ${props.Year || 'N/A'}</div>
+            ${bullets ? `<ul>${bullets}</ul>` : ''}
+          </div>
+        `;
+
+    hoveredPopup= new mapboxgl.Popup({ offset: 12 })
+      .setLngLat(e.lngLat)
+      .setHTML(html)
+      .addTo(map);
+
+  });
+
+  map.on('mouseleave', 'resume-points', () => {
+    map.getCanvas().style.cursor = '';
+    if (hoveredPopup) {
+      hoveredPopup.remove();
+      hoveredPopup = null;
     }
   });
+
+  // Change cursor when hovering
+  map.on('mouseenter', 'resume-points', () => map.getCanvas().style.cursor = 'pointer');
+  map.on('mouseleave', 'resume-points', () => map.getCanvas().style.cursor = '');
 
       map.addLayer({
       id: 'heatmap-layer',
@@ -95,55 +165,11 @@ map.on('load', () => {
 
     console.log('Applied filter:', filter);
 
-  // Click handler for popups
-  // map.on('click', 'resume-points', (e) => {
-  //   const feature = e.features[0];
-  //   const props = feature.properties;
-
-  map.on('mouseenter', 'resume-points', (e) => {
-    map.getCanvas().style.cursor = 'pointer';
-
-    const feature = e.features[0];
-    const props = feature.properties;
-
-    // Format Description into bullet points
-    const bullets = props.Description
-      ? props.Description.split(',')
-        .map(item => item.trim())
-        .filter(item => item.length > 0)
-        .map(item => `<li>${item}</li>`)
-        .join('')
-      : '';
-
-    // Build popup HTML
-    const html = `
-            <div class="resume-popup">
-            <strong>${props.Name || 'Untitled'}</strong>
-            <div class="exp-type">Experience type: ${props.ExperienceType || 'N/A'}</div>
-            <div class="year">Year: ${props.Year || 'N/A'}</div>
-            ${bullets ? `<ul>${bullets}</ul>` : ''}
-          </div>
-        `;
-
-    hoveredPopup= new mapboxgl.Popup({ offset: 12 })
-      .setLngLat(e.lngLat)
-      .setHTML(html)
-      .addTo(map);
-
-  });
-
-  map.on('mouseleave', 'resume-points', () => {
-    map.getCanvas().style.cursor = '';
-    if (hoveredPopup) {
-      hoveredPopup.remove();
-      hoveredPopup = null;
-    }
-  });
-
-  // Change cursor when hovering
-  map.on('mouseenter', 'resume-points', () => map.getCanvas().style.cursor = 'pointer');
-  map.on('mouseleave', 'resume-points', () => map.getCanvas().style.cursor = '');
+    });
 });
+
+
+  
 
 // Handle tree node clicks
 document.querySelectorAll('.zoom-node').forEach(node => {
@@ -155,7 +181,7 @@ document.querySelectorAll('.zoom-node').forEach(node => {
 
   });
 });
-});
+
 
 
 // Create a popup, but don't add it to the map yet.
