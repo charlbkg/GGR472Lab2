@@ -122,9 +122,17 @@
       <div class=" col-sm-9 map-container">
         <div class="right-col">
         <div id="map">
-        <div class="slider-container">
-  <div class="year-label">Year: <span id="year-value">2010</span></div>
-  <input type="range" id="year-slider" min="2000" max="2025" value="2010" step="1">
+<div id="heatmap-controls">
+  <label>
+    <input type="checkbox" id="toggle-heatmap" checked>
+    Show Heatmap
+  </label>
+
+  <div>
+    <span>Year: <span id="year-value"></span></span>
+    <input type="range" id="year-slider" min="2013" max="2025" value="2013">
+      <button id="reset-extent-btn">Zoom to Full Heatmap</button>
+  </div>
 </div>
 </div>
 <div id="status" class="status">

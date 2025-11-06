@@ -131,14 +131,14 @@ map.on('load', () => {
       source: 'resume',
       paint: {
         'heatmap-weight': 1,
-        'heatmap-intensity': 3.5,
-        'heatmap-radius': 60,
+        'heatmap-intensity': 1,
+        'heatmap-radius': 200,
         'heatmap-opacity': 0.8,
         'heatmap-color': [
           'interpolate',
           ['linear'],
           ['heatmap-density'],
-          0, 'rgba(33,102,172,0)',
+          0, 'rgba(255, 255, 255, 0)',
           0.2, 'rgb(103,169,207)',
           0.4, 'rgb(209,229,240)',
           0.6, 'rgb(253,219,199)',
@@ -150,6 +150,9 @@ map.on('load', () => {
 
  const slider = document.getElementById('year-slider');
   const yearLabel = document.getElementById('year-value');
+  const toggleHeatmap = document.getElementById('toggle-heatmap');
+
+  yearLabel.textContent = slider.value;
 
   // Initial filter
   let currentYear = parseInt(slider.value);
@@ -166,8 +169,22 @@ map.on('load', () => {
     console.log('Applied filter:', filter);
 
     });
+    //Heatmap visibility toggle
+toggleHeatmap.addEventListener('change', (e) => {
+  const visibility = e.target.checked ? 'visible' : 'none';
+  map.setLayoutProperty('heatmap-layer', 'visibility', visibility);
+});
 });
 
+//Create event listener to fly to location when the button is clicked, and function that cycles through each point
+document.getElementById('reset-extent-btn').addEventListener('click', function () {
+//     // Back to the first coordinate.
+    map.flyTo({
+        zoom: 2.8,
+        center: [-67,
+          53],
+    });
+    });
 
   
 
