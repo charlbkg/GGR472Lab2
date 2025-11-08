@@ -113,13 +113,13 @@ map.on('load', () => {
 
   });
 
-  map.on('mouseleave', 'resume-points', () => {
-    map.getCanvas().style.cursor = '';
-    if (hoveredPopup) {
-      hoveredPopup.remove();
-      hoveredPopup = null;
-    }
-  });
+  // map.on('mouseleave', 'resume-points', () => {
+  //   map.getCanvas().style.cursor = '';
+  //   if (hoveredPopup) {
+  //     hoveredPopup.remove();
+  //     hoveredPopup = null;
+  //   }
+  // });
 
   // Change cursor when hovering
   map.on('mouseenter', 'resume-points', () => map.getCanvas().style.cursor = 'pointer');
