@@ -116,6 +116,7 @@ map.on('load', () => {
   const yearLabel = document.getElementById('year-value');
   const toggleHeatmap = document.getElementById('toggle-heatmap');
 
+  slider.value = 2025;
   yearLabel.textContent = slider.value;
 
   // Initial filter
