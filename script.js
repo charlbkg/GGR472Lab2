@@ -4,7 +4,7 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/charlottebkg/cltadlaho00nt01qkgei36fnn', // style URL
   center: [-71.09647636158911,
     42.386864529111335], // starting position [lng, lat]
-  zoom: 17, // starting zoom
+  zoom: 16, // starting zoom
   pitch: 50,
 });
 // Add zoom and rotation controls, position controls
@@ -141,7 +141,7 @@ toggleHeatmap.addEventListener('change', (e) => {
 });
 });
 
-//Create event listener to fly to location when the button is clicked, and function that cycles through each point
+
 document.getElementById('reset-extent-btn').addEventListener('click', function () {
 //     // Back to the first coordinate.
     map.flyTo({
@@ -160,7 +160,43 @@ document.querySelectorAll('.zoom-node').forEach(node => {
     const lng = parseFloat(node.getAttribute('data-lng'));
     const zoom = parseFloat(node.getAttribute('data-zoom'));
     map.flyTo({ center: [lng, lat], zoom: zoom, essential: true });
+document.querySelectorAll('.zoom-node.highlight')
+      .forEach(el => el.classList.remove('highlight'));
 
+    // Highlight the clicked node
+    node.classList.add('highlight');
   });
 });
 
+
+map.on('click', 'resume-points', (e) => {
+  const feature = e.features[0];
+  const name = feature.properties.Name;
+
+  // Find matching tree node
+  const node = document.querySelector(`.zoom-node[data-name="${name}"]`);
+  if (!node) return;
+
+  // Use coordinates stored in the HTML list
+  const lat = parseFloat(node.getAttribute('data-lat'));
+  const lng = parseFloat(node.getAttribute('data-lng'));
+  const zoom = parseFloat(node.getAttribute('data-zoom')) || 17;
+
+  // Fly the map to the UL-provided coordinates
+  map.flyTo({
+    center: [lng, lat],
+    zoom: zoom,
+    essential: true
+  });
+
+  // Highlight tree item
+  document.querySelectorAll('.zoom-node.highlight')
+    .forEach(el => el.classList.remove('highlight'));
+
+  node.classList.add('highlight');
+
+  node.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+});

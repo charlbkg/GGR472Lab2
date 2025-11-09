@@ -198,7 +198,11 @@ li:hover {
   word-break: break-word;
 }
 
-
+.zoom-node.highlight {
+  background-color: #4e4d4c;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
+}
 
 
 /* Portfolio formatting */
